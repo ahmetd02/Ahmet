@@ -5,13 +5,13 @@ Feature: Devbook log in test
   Background:
     Given The user is on the login page
 
-  @teacher
+  @teacher @smoke
   Scenario: Log in as a teacher
     #Given The user is on the login page
     When The user enters teacher credentials
     Then The user should be able to login
 
-  @student  @smoke @db
+  @student
   Scenario: Log in as a student
     #Given The user is on the login page
     When The user enters student credentials
@@ -24,7 +24,7 @@ Feature: Devbook log in test
     When The user enters developer credentials
     Then The user should be able to login
 
-  @db @SDET @smoke
+  @db @SDET
   Scenario: Login as a SDET
     #Given The user is on the login page
     When The user enters SDET credentials

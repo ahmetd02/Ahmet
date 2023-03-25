@@ -18,7 +18,7 @@ Feature:Navigate to Menu Parameters
     #Then The welcome message contains "Teacher"
     And The user navigates to "All Posts" menu
     Then The user should be able to see header as "Posts"
-
+  @smoke
   Scenario: User navigates to My Account Menu
     #Given The user is on the login page
     #When The user logs in using "teacher@bootflow.academy" and "Test12345!"
